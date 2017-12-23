@@ -1,0 +1,64 @@
+aTA-1 Name:- Rohit
+TA-2 Name:- Wenjun
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Missing examples for class methods
+	2. Missing constructor template for classes
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about relations between classes, satisfactory answer.
+	2. Asked about static factory class, satisfactory answer.
+
+
+Question 2 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Missing examples for some methods in Schedules.
+	2. Missing halting measure for function search.	
+	3. Better to add short comments to explain different parts(tasks) in a method.
+	4. Design strategies are not mendantory, but if you want to write them, please be correct.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked why do we need interface, satisfactory answer.
+	2. Asked about function search, satisfactory answer.
+
+
+
+
+Student2 CCIS ID:- wang4615
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Missing examples for class methods
+	2. Missing constructor template for classes
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about class RacketLists, satisfactory answer.
+
+
+Question 2 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Missing examples for some methods in Schedules.
+	2. Missing halting measure for function search.	
+	3. Better to add short comments to explain different parts(tasks) in a method.
+	4. Design strategies are not mendantory, but if you want to write them, please be correct.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about canGetThere, satisfactory answer.
+	2. Asked about private function bfs, satisfactory answer.
+	3. Asked how tests are designed, satisfactory answer.

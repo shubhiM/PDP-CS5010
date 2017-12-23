@@ -1,0 +1,16 @@
+Running test: ack... PASS
+Running test: bst... PASS
+Running test: church... PASS
+Running test: fact... PASS
+Running test: fact2... PASS
+Running test: fib... PASS
+Running test: insertionsort... PASS
+Running test: mergesort... PASS
+Running test: naive... PASS
+Running test: sieve... PASS
+Running test: tail... PASS
+Running test: bad1... PASS
+Running test: bad2... PASS
+Running test: bad3... PASS
+Running test: bad4... PASS
+15 success(es) 0 failure(s) 0 error(s) 15 test(s) run

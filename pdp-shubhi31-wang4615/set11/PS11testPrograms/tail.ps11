@@ -1,0 +1,40 @@
+# Given non-negative integers i, j, and k, returns i * j * k,
+# the hard way.
+
+tail (i, j, k)
+  mul (i, mul (j, k));
+
+mul (m, n)
+  if m = 0
+    then 0
+    else add (n, mul (m - 1, n));
+
+add (m, n)
+  if m = 0
+    then n
+    else add6 (m - 1, n + 1);
+
+add2 (m, n)
+  if m = 0
+    then n
+    else add4 (m - 1, n + 1);
+
+add3 (m, n)
+  if m = 0
+    then n
+    else add2 (m - 1, n + 1);
+
+add4 (m, n)
+  if m = 0
+    then n
+    else add (m - 1, n + 1);
+
+add5 (m, n)
+  if m = 0
+    then n
+    else add3 (m - 1, n + 1);
+
+add6 (m, n)
+  if m = 0
+    then n
+    else add5 (m - 1, n + 1)

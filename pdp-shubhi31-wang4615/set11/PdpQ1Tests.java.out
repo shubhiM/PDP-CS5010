@@ -1,0 +1,16 @@
+Running test: ack(3,3)... PASS
+Running test: bst(64,49,2)... PASS
+Running test: bst(64,81,2)... PASS
+Running test: church(5)... PASS
+Running test: fact(11)... PASS
+Running test: fact2(11)... PASS
+Running test: fib(7,1)... PASS
+Running test: insertionsort(2,20)... PASS
+Running test: mergesort(1,20)... PASS
+Running test: quicksort(3,12)... PASS
+Running test: selectionsort(3,14)... PASS
+Running test: sieve(1,100)... PASS
+Running test: sumsq(25,3)... PASS
+Running test: tail(why was 6 afraid of 7?)... PASS
+Running test: vectors(618)... PASS
+15 success(es) 0 failure(s) 0 error(s) 15 test(s) run

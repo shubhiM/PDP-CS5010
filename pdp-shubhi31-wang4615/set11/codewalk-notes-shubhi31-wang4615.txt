@@ -1,0 +1,67 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Sankar
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1:
+
+Design Grade:- A
+TA Comments on Design:-
+> had fixed all the errors in the previous submission.
+> if argument list is just one? what should happen? is this a valid condition.
+
+
+Student1:- shubhi31
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+
+Question 2:
+
+Design Grade:- A
+TA Comments on Design:-
+> could have used more meaningful variable names.
+> had used overloading methods.
+> can include a termination condition.
+ 
+
+Student1:- shubhi31
+Presentation Grade:- A
+TA Comments on Presentation:-
+> was able to identify the free variables of the given example.
+> 
+
+
+
+Student2 CCIS ID:- wang4615
+
+Question 1:
+
+Design Grade:- A
+TA Comments on Design:-
+> had fixed all the errors in the previous submission.
+> if argument list is just one? what should happen? is this a valid condition.
+> 
+
+
+Student2:- wang4615
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+Question 2:
+
+Design Grade:- A
+TA Comments on Design:-
+> could have used more meaningful variable names.
+> had used overloading methods.
+> can include a termination condition.
+
+ 
+
+Student2:- wang4615
+Presentation Grade:- A
+TA Comments on Presentation:-
+

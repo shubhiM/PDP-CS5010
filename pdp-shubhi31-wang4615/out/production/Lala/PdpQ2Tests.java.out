@@ -1,0 +1,74 @@
+Running test: you're already there!... PASS
+Running test: ROT isn't served by Delta... PASS
+Running test: TEN isn't served by Delta... PASS
+Running test: the empty graph is strongly connected... PASS
+Running test: deltaFlights is strongly connected... PASS
+Running test: deltaCycle is strongly connected... PASS
+Running test: deltaCycle is not strongly connected without BOS... PASS
+Running test: itinerary for DEN to DEN via Pan Am... ERROR
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:85)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpQ2Tests.main(PdpQ2Tests.java:635)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at Schedules.fastestItinerary(Schedules.java:66)
+	at PdpQ2Tests.fastestItinerary(PdpQ2Tests.java:22)
+	at PdpQ2Tests.lambda$main$32(PdpQ2Tests.java:368)
+	at PdpQ2Tests$$Lambda$8/1826771953.get(Unknown Source)
+	at PdpTestSuite$TestCase.lambda$run$41(PdpTestSuite.java:83)
+	at PdpTestSuite$TestCase$$Lambda$19/999966131.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: itinerary for BAL to BAL via Delta... ERROR
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at PdpTestSuite$TestCase.run(PdpTestSuite.java:85)
+	at PdpTestSuite.runTests(PdpTestSuite.java:45)
+	at PdpQ2Tests.main(PdpQ2Tests.java:635)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at Schedules.fastestItinerary(Schedules.java:66)
+	at PdpQ2Tests.fastestItinerary(PdpQ2Tests.java:22)
+	at PdpQ2Tests.lambda$main$33(PdpQ2Tests.java:371)
+	at PdpQ2Tests$$Lambda$9/1406718218.get(Unknown Source)
+	at PdpTestSuite$TestCase.lambda$run$41(PdpTestSuite.java:83)
+	at PdpTestSuite$TestCase$$Lambda$19/999966131.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Running test: itinerary for DEN to DTW via Delta... PASS
+Running test: travel time for BOS to DTW... PASS
+Running test: itinerary for PDX to LHR via Delta... PASS
+Running test: travel time for BZN to LGA... PASS
+Running test: travel time for BZN to LHR... PASS
+Running test: travel time using deltaCycle... PASS
+Running test: benchmark2(5)... benchmark2(5): 0ms
+PASS
+Running test: benchmark2(10)... benchmark2(10): 0ms
+PASS
+Running test: benchmark2(15)... benchmark2(15): 2ms
+PASS
+Running test: benchmark2(20)... benchmark2(20): 4ms
+PASS
+Running test: benchmark2(25)... benchmark2(25): 7ms
+PASS
+Running test: benchmark2(30)... benchmark2(30): 16ms
+PASS
+Running test: benchmark2(35)... benchmark2(35): 28ms
+PASS
+Running test: benchmark2(40)... benchmark2(40): 42ms
+PASS
+Running test: benchmark2(45)... benchmark2(45): 95ms
+PASS
+Running test: benchmark2(50)... benchmark2(50): 132ms
+PASS
+23 success(es) 0 failure(s) 2 error(s) 25 test(s) run

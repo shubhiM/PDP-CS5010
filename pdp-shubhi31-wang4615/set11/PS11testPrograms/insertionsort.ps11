@@ -1,0 +1,212 @@
+# Insertionsort benchmark.
+# Allocates m pseudo-random lists, each of length n, and sorts each list.
+
+isbench (m, n)
+  if m < M
+    then toString (benchLoop (m, m, n))
+    else do (benchLoop (m, M, n),
+             (λ (ignored) isbench (m - M, n)));
+
+# Given a seed, a count m, and a length n,
+# creates m pseudo-random lists, each of length n, and sorts each list.
+
+benchLoop (seed, m, n)
+  if m > 1
+    then do (insertionsort (randomList (seed, n)),
+             (λ (ignored) benchLoop (nextSeed1 (seed), m - 1, n)))
+    else insertionsort (randomList (seed, n));
+
+# Given a seed and a length,
+# returns a pseudo-random list of the given length.
+
+randomList (seed, n)
+  if n > 0
+    then cons (randomInteger (seed, RANGE),
+               randomList (nextSeed2 (seed), n - 1))
+    else empty;
+
+# exclusive upper bound on list elements
+
+RANGE = 100;
+
+# synonym for RANGE
+
+MAX   = 100;
+
+# Given a list of non-negative integers,
+# returns an integer representing its first 4 elements.
+
+toString (x)
+  if isEmpty (x)
+    then 0-1
+  else if isEmpty (rest (x))
+    then 0 - (mod (first (x), MAX))
+  else if isEmpty (rest (rest (x)))
+    then 0 - MAX * (mod (first (x), MAX)) - (mod (first (rest (x)), MAX))
+  else if isEmpty (rest (rest (rest (x))))
+    then 0 - MAX * MAX * (mod (first (x), MAX))
+           - MAX * (mod (first (rest (x)), MAX))
+           - (mod (first (rest (rest (x))), MAX))
+  else 9 * MAX * MAX * MAX * MAX
+     + MAX * MAX * MAX * first (x)
+     + MAX * MAX * first (rest (x))
+     + MAX * first (rest (rest (x)))
+     + first (rest (rest (rest (x))));
+
+# Given a list of integers, sorts it into increasing order.
+
+insertionsort (lst)
+  if isEmpty (lst)
+    then empty
+    else insert (first (lst),
+                 insertionsort (rest (lst)));
+
+insert (x, lst)
+  if isEmpty (lst)
+    then cons (x, empty)
+  else if x < first (lst)
+    then cons (x, lst)
+    else cons (first (lst),
+               insert (x, rest (lst)));
+
+# Given a list of integers and a 2-argument continuation,
+# calls the continuation on two sublists that, taken together,
+# contain all elements of the given list.
+
+split (lst, continuation)
+  if isEmpty (lst)
+    then continuation (empty, empty)
+    else if isEmpty (rest (lst))
+           then continuation (lst, empty)
+           else split (rest (rest (lst)),
+                       (λ (lst1, lst2)
+                         continuation (cons (first (lst), lst1),
+                                       cons (first (rest (lst)), lst2))));
+
+# Given two sorted lists, returns their merge.
+
+merge (lst1, lst2)
+  if isEmpty (lst1)
+    then lst2
+  else if isEmpty (lst2)
+    then lst1
+  else (λ (x, y)
+         if x < y
+           then cons (x, merge (rest (lst1), lst2))
+           else cons (y, merge (lst1, rest (lst2))))
+       (first (lst1),
+        first (lst2));
+
+# Pseudo-random number generation.
+
+MODULUS1    = 16001;
+MULTIPLIER1 = 971;
+ADD1        = 14293;
+
+MODULUS2    = 14653;
+MULTIPLIER2 = 5123;
+ADD2        = 7812;
+
+ADD3        = 12495;
+
+nextSeed1 (seed)
+  mod (ADD1 + MULTIPLIER1 * seed, MODULUS1);
+
+nextSeed2 (seed)
+  mod (ADD2 + MULTIPLIER2 * seed, MODULUS2);
+
+# Returns a pseudo-random integer in the range [0,n).
+
+randomInteger (seed, n)
+  mod (seed, n);
+
+# Returns k mod m.
+# Preconditions: k >= 0, m > 0.
+
+mod (k, m)
+  if k < m
+    then k
+    else mod (k - m, m);
+
+# To reduce the likelihood of stack overflow
+# when interpreted by an interpreter written in Java,
+# what would ordinarily have been m tail-recursive
+# calls are broken up into pieces with no more than M
+# tail-recursive calls.
+
+M = 100;
+
+# Passes its first argument to its second argument.
+
+do (x, f) f (x);
+
+# Boolean negation.
+
+not (x) if x then false else true;
+
+################################################################
+
+# Returns the length of the list.
+
+length (lst)
+  if isEmpty (lst) then 0 else 1 + length (rest (lst));
+
+# Returns a list of the given list's elements for which the
+# given predicate is true.
+
+filter (pred, lst)
+  if isEmpty (lst)
+    then empty
+  else if pred (first (lst))
+    then cons (first (lst),
+               filter (pred, rest (lst)))
+  else filter (pred, rest (lst));
+
+# Returns the concatenation of the given lists.
+
+append (x, y)
+  if isEmpty (x)
+    then y
+    else cons (first (x), append (rest (x), y));
+
+################################################################
+#
+# An abstract data type of lists.
+#
+# Representation:
+#     A list is a function that, given a 3-argument selector
+#     function, returns the result of calling that function on
+#     these three things:
+#         a boolean indicating whether the list is empty
+#         the first element of the list
+#         the rest of the list
+#
+################################################################
+
+empty (op)                      # the empty list
+  op (true, empty, empty);
+
+cons (x, lst)                   # returns x consed onto lst
+  (λ (op)
+    (op (false, x, lst)));
+
+isEmpty (lst)                   # returns true iff lst is empty
+  lst ((λ (x, y, z) x));
+
+first (lst)                     # returns first element of a non-empty lst
+  if isEmpty (lst)
+    then false + false          # throws exception if lst is empty
+    else first0 (lst);
+
+rest (lst)                      # returns rest of a non-empty lst
+  if isEmpty (lst)
+    then false + false          # throws exception if lst is empty
+    else rest0 (lst);
+
+# Private help functions.
+
+first0 (lst)                    # unsafe (non-checking) version of first
+  lst ((λ (x, y, z) y));
+
+rest0 (lst)                     # unsafe (non-checking) version of rest
+  lst ((λ (x, y, z) z))

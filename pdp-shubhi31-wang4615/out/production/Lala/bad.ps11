@@ -1,0 +1,2 @@
+f (x, y) g (x, y) (y, z);
+g (z, y) if 3 > 4 then x else f

@@ -1,0 +1,36 @@
+# Returns the alternating sum of the first n squares, computed ITERS times.
+#
+# Result is
+#
+#     n*n - (n-1)*(n-1) + (n-2)*(n-2) - (n-3)*(n-3) + ...
+#
+# Usage:
+#
+#     java Programs sumsq.ps11 N ITERS
+
+main (n, iters)
+  if iters = 0
+    then 0-1
+  else if iters = 1
+    then sumSquares (n)
+  else (λ (ignored) main (n, iters - 1))
+       (sumSquares (n));
+
+# Returns the sum of the first n squares.
+
+sumSquares (n)
+  sumSquaresLoop (n, 0);
+
+# Returns alternating sum of the first n squares plus sum.
+
+sumSquaresLoop (n, sum)
+  if n < 2
+    then sum + n*n
+    else sumSquaresLoop2 (n - 1, sum + n * n);
+
+# Returns alternating sum of the first n+1 squares, minus (n+1)^2, plus sum.
+
+sumSquaresLoop2 (n, sum)
+  if n < 2
+    then sum - n*n
+    else sumSquaresLoop (n - 1, sum - n * n)

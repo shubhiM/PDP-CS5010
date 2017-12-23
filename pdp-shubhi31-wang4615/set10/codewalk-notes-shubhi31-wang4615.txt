@@ -1,0 +1,81 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Sankar
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1:
+
+Design Grade:-B
+TA Comments on Design:-
+> had defined expBase as an abstract class.
+> used overriding methods to implement isX() methods.
+> had defined value function in base class as an abstract method.
+
+> why are you calling isIdentifier() and isLambda() in callexp.value method. what makes it special? Avoid Redundant code.
+> a call to the isIdentifier and isLambda is considered as a poor design.
+> programs.run is a different question. How first question depends on second question?
+*> is not checking if argument size is equal to formals size
+> is not clear what is happening in line 69-70 in function value.
+*> why function environment and progEnv(actual) environment to runtime env?
+
+
+Student1:-shubhi31
+Presentation Grade:- A
+TA Comments on Presentation:-
+> good understanding of how isX() functions are implemented using base class and subclasses with overriding method.
+> was able to point out the part of submission which implements the rules provided by professor with followups.
+
+
+Question 2:
+
+Design Grade:- AB
+TA Comments on Design:-
+> is not checking size of formals and input are same or not?
+> including an exception handling as suggested will be good
+> should keep a copy of the environment.
+
+
+Student1:-shubhi31
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+
+
+Student2 CCIS ID:--wang4615
+Question 1:
+
+Design Grade:-B
+TA Comments on Design:-
+> had defined expBase as an abstract class.
+> used overriding methods to implement isX() methods.
+> had defined value function in base class as an abstract method.
+
+> why are you calling isIdentifier() and isLambda() in callexp.value method. what makes it special? Avoid Redundant code.
+> a call to the isIdentifier and isLambda is considered as a poor design.
+> programs.run is a different question. How first question depends on second question? 
+  A call to run function from value function is not a good design.
+*> is not checking if argument size is equal to formals size
+> its not clear what is happening in line 69-70 in function value.
+*> why function environment and progEnv(actual) environment is added to runtime env?
+
+
+Student2:--wang4615
+Presentation Grade:- A
+TA Comments on Presentation:-
+> understand why value is made as abstract method.
+> was able to point out the part of submission which implements the rules provided by professor with followups.
+
+Question 2:
+
+Design Grade:- AB
+TA Comments on Design:-
+> is not checking size of formals and input are same or not?
+> including an exception handling as suggested will be good
+> should keep a copy of the environment.
+
+
+Student2:--wang4615
+Presentation Grade:- A
+TA Comments on Presentation:-

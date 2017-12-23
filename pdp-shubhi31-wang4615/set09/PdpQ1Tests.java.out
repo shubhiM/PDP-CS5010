@@ -1,0 +1,41 @@
+Running test: UTC.hour 0:00... PASS
+Running test: UTC.minute 0:00... PASS
+Running test: UTC.hour 0:59... PASS
+Running test: UTC.minute 0:59... PASS
+Running test: UTC.hour 23:00... PASS
+Running test: UTC.minute 23:00... PASS
+Running test: UTC.hour 23:59... PASS
+Running test: UTC.minute 23:59... PASS
+Running test: UTC.hour 15:31... PASS
+Running test: UTC.minute 15:31... PASS
+Running test: UTC.isEqual reflexive 0:00... PASS
+Running test: UTC.isEqual unequal 0:00 0:01... PASS
+Running test: UTC.isEqual reflexive 0:59... PASS
+Running test: UTC.isEqual unequal 0:59 0:00... PASS
+Running test: UTC.isEqual reflexive 23:00... PASS
+Running test: UTC.isEqual unequal 23:00 23:01... PASS
+Running test: UTC.isEqual reflexive 23:59... PASS
+Running test: UTC.isEqual unequal 23:59 23:00... PASS
+Running test: UTC.isEqual reflexive 15:31... PASS
+Running test: UTC.isEqual unequal 15:31 15:32... PASS
+Running test: Flight.name... PASS
+Running test: Flight.departs... PASS
+Running test: Flight.arrives... PASS
+Running test: Flight.departsAt... PASS
+Running test: Flight.arrivesAt... PASS
+Running test: red-eye flight 1... PASS
+Running test: red-eye flight 2... PASS
+Running test: Flight.isEqual 2... PASS
+Running test: Flight.isEqual 3... PASS
+Running test: Flight.isEqual 4... PASS
+Running test: Flight.isEqual 5... PASS
+Running test: empty list is empty... PASS
+Running test: singleton list is not empty,... PASS
+Running test: two-element list is not empty,... PASS
+Running test: number of elements... PASS
+Running test: numbers in, numbers out... PASS
+Running test: cons() does not change existing list 1... PASS
+Running test: cons() does not change existing list 2... PASS
+Running test: rest() does not change existing list... PASS
+Running test: now that's just weird... PASS
+40 success(es) 0 failure(s) 0 error(s) 40 test(s) run
