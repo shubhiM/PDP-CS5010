@@ -1,0 +1,178 @@
+--------------------
+q2 > Test #2
+Test #2
+FAILURE
+name:       check-equal?
+location:   q2-bb.rkt:89:17
+params:     #f
+#t
+actual:     #f
+expected:   #t
+expression: (check-equal? (can-get-there? "JFK" "JFK" panAmFlights) true)
+message:    "but the trivial itinerary goes from JFK to JFK"
+Check failure
+--------------------
+--------------------
+q2 > Test #6
+Test #6
+ERROR
+first: expected argument of type <non-empty list>; given: '()
+  context...:
+   /usr/share/racket/pkgs/compatibility-lib/mzlib/list.rkt:70:0: first
+   /usr/share/racket/pkgs/deinprogramm-signature/deinprogramm/signature/signature-unit.rkt:719:0: checked-first
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2.rkt:109:0: fastest-itinerary
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:441:30
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:397:0: call-with-limits
+   .../more-scheme.rkt:261:28
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/text-ui.rkt:200:0: run-tests14
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2-bb.rkt: [running body]
+
+--------------------
+--------------------
+q2 > Test #8
+Test #8
+ERROR
+first: expected argument of type <non-empty list>; given: '()
+  context...:
+   /usr/share/racket/pkgs/compatibility-lib/mzlib/list.rkt:70:0: first
+   /usr/share/racket/pkgs/deinprogramm-signature/deinprogramm/signature/signature-unit.rkt:719:0: checked-first
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2.rkt:143:0: travel-time
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:441:30
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:397:0: call-with-limits
+   .../more-scheme.rkt:261:28
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/text-ui.rkt:200:0: run-tests14
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2-bb.rkt: [running body]
+
+--------------------
+--------------------
+q2 > Test #9
+Test #9
+ERROR
+first: expected argument of type <non-empty list>; given: '()
+  context...:
+   /usr/share/racket/pkgs/compatibility-lib/mzlib/list.rkt:70:0: first
+   /usr/share/racket/pkgs/deinprogramm-signature/deinprogramm/signature/signature-unit.rkt:719:0: checked-first
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2.rkt:109:0: fastest-itinerary
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:441:30
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:397:0: call-with-limits
+   .../more-scheme.rkt:261:28
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/text-ui.rkt:200:0: run-tests14
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2-bb.rkt: [running body]
+
+--------------------
+--------------------
+q2 > Test #11
+Test #11
+FAILURE
+name:       check-equal?
+location:   q2-bb.rkt:162:17
+params:     '((#f #t #t #t #t #t #t #t)
+  (#f #f #t #t #t #t #t #t)
+  (#f #f #f #t #t #t #t #t)
+  (#f #f #f #f #t #t #t #t)
+  (#f #f #f #f #f #t #t #t)
+  (#f #f #f #f #f #f #t #t)
+  (#f #f #f #f #f #f #f #t)
+  (#f #f #f #f #f #f #f #f))
+'((#t #t #t #t #t #t #t #t)
+  (#f #t #t #t #t #t #t #t)
+  (#f #f #t #t #t #t #t #t)
+  (#f #f #f #t #t #t #t #t)
+  (#f #f #f #f #t #t #t #t)
+  (#f #f #f #f #f #t #t #t)
+  (#f #f #f #f #f #f #t #t)
+  (#f #f #f #f #f #f #f #t))
+actual:     '((#f #t #t #t #t #t #t #t)
+  (#f #f #t #t #t #t #t #t)
+  (#f #f #f #t #t #t #t #t)
+  (#f #f #f #f #t #t #t #t)
+  (#f #f #f #f #f #t #t #t)
+  (#f #f #f #f #f #f #t #t)
+  (#f #f #f #f #f #f #f #t)
+  (#f #f #f #f #f #f #f #f))
+expected:   '((#t #t #t #t #t #t #t #t)
+  (#f #t #t #t #t #t #t #t)
+  (#f #f #t #t #t #t #t #t)
+  (#f #f #f #t #t #t #t #t)
+  (#f #f #f #f #t #t #t #t)
+  (#f #f #f #f #f #t #t #t)
+  (#f #f #f #f #f #f #t #t)
+  (#f #f #f #f #f #f #f #t))
+expression: (check-equal? (map (lambda (ap1) (map (lambda (ap2) (can-get-there? ap1 ap2 syntheticFlights)) synthetic-airports)) synthetic-airports) (list (list true true true true true true true true) (list false true true true true true true true) (list false false true true true true true true) (list false false false true true true true true) (list false false false false true true true true) (list false false false false false true true true) (list false false false false false false true true) (list false false false false false false false true)))
+message:    "can-get-there? fails on some synthetic airports"
+Check failure
+--------------------
+--------------------
+q2 > Test #12
+Test #12
+ERROR
+first: expected argument of type <non-empty list>; given: '()
+  context...:
+   /usr/share/racket/pkgs/compatibility-lib/mzlib/list.rkt:70:0: first
+   /usr/share/racket/pkgs/deinprogramm-signature/deinprogramm/signature/signature-unit.rkt:719:0: checked-first
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2.rkt:143:0: travel-time
+   /usr/share/racket/collects/racket/private/map.rkt:25:19: loop
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:441:30
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:397:0: call-with-limits
+   .../more-scheme.rkt:261:28
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/text-ui.rkt:200:0: run-tests14
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2-bb.rkt: [running body]
+
+--------------------
+--------------------
+q2 > Test #13
+Test #13
+ERROR
+with-limit: out of time
+  context...:
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:397:0: call-with-limits
+   .../more-scheme.rkt:261:28
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/text-ui.rkt:200:0: run-tests14
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2-bb.rkt: [running body]
+
+--------------------
+--------------------
+q2 > Test #14
+Test #14
+ERROR
+with-limit: out of time
+  context...:
+   /usr/share/racket/pkgs/sandbox-lib/racket/sandbox.rkt:397:0: call-with-limits
+   .../more-scheme.rkt:261:28
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /usr/share/racket/pkgs/rackunit-lib/rackunit/text-ui.rkt:200:0: run-tests14
+   /home/justin/src/CODECUT/set06/pdp-shubhi31-abhilashk/set06/q2-bb.rkt: [running body]
+
+--------------------
+7 success(es) 2 failure(s) 6 error(s) 15 test(s) run
+extras.rkt Wed Sep 14 08:52:19 2016
+flight.rkt appears to be in a correctly named folder. Running tests...
+Running tests from flight.rkt...
+All tests passed (13 tests).
+q2.rkt appears to be in a correctly named folder. Running tests...
+Running tests from q2.rkt...
+All tests passed (5 tests).
+8

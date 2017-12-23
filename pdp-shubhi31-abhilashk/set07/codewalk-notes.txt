@@ -1,0 +1,65 @@
+TA-1 Name:- Himanshu
+TA-2 Name:- Vinay
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1 :-
+
+Design Grade:- A
+TA Comments on Design:-
+- Missing contract or lambda function in itinerary=?
+Suggestion : 
+- in itinerary=? could have avoided use of 2 HOFs and could have managed with only andmap.
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+- Good
+
+Question 2 :-
+
+Design Grade:- 
+TA Comments on Design:- AB
+- Contract for airports-descendants should return list of Airports.
+- Contract for arriving-airports should return ListOfAirport.
+- Contract for possible-flights should return ListOfListOfFlights.
+- Strategy is incorrect for arriving-airports.
+
+
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+- Could not answer the properties of halting measure.  
+- Could not identify errors in few contract.
+
+
+Student2 CCIS ID:- abhilashk
+
+Question 1 :-
+
+Design Grade:- 
+TA Comments on Design:- A
+- Missing contract or lambda function in itinerary=?
+Suggestion : 
+- in itinerary=? could have avoided use of 2 HOFs and could have managed with only andmap.
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+- Good
+
+Question 2 :-
+
+Design Grade:- 
+TA Comments on Design:- AB
+- Contract for airports-descendants should return list of Airports.
+- Contract for arriving-airports should return ListOfAirport.
+- Contract for possible-flights should return ListOfListOfFlights.
+- Strategy is incorrect for arriving-airports.
+
+
+Presentation Grade:- AB
+TA Comments on Presentation:-
+- Could not answer the properties of halting measure. 
+- Could not identify errors in few contract.

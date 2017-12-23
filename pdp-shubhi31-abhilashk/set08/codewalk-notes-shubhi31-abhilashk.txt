@@ -1,0 +1,56 @@
+TA-1 Name:- Sankar
+TA-2 Name:- Wenjun
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Halting measure for function shortest-path-tree is wrong
+	2. Function shortest-path-tree could be further broken down
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about function filter-nodes, satisfactory answer.
+
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+	1. Student did correct analyze.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about worst case running time for filter-nodes, satisfactory answer.
+
+
+
+
+Student2 CCIS ID:- abhilashk
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+	1. Halting measure for function shortest-path-tree is wrong
+	2. Function shortest-path-tree could be further broken down
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about functionality of shortest-path-tree, satisfactory answer.
+	1. Asked about fastest-node, satisfactory answer.
+
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+	1. Student did correct analyze.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+	1. Asked about the time complexity analysis result, satisfactory answer.
+	2. Asked about the time complexity for shortest-path-tree, satisfactory answer.

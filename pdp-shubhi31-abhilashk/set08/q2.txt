@@ -1,0 +1,28 @@
+Assymptotic time complexity
+
+The implementation takes O(n^3). The benchmark0 benchmark calls both
+can-get-there? and travel-time O(n^2) times, so benchmark0 runs in
+O(n^5) time.
+
+n	(benchmark0 n)	Ratio to Previous Timing
+10		1000	
+12		2246			2.246
+14		6141			2.734
+16		11496			1.872
+18		21365			1.858
+20		30264			1.416
+22		44810			1.480
+24		66825			1.491
+26		102087			1.527
+28		148220			1.451
+30		207548			1.400
+32		293496			1.414
+34		416547			1.419
+36		583469			1.400
+38		762000			1.305
+40		980922			1.287
+42		1250594			1.274
+44		1595641			1.275
+46		1990172			1.247
+48		2466265			1.239
+50		3041422			1.233

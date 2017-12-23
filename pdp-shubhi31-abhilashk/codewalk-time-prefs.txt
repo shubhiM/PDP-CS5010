@@ -1,0 +1,48 @@
+Please score each code walk time slot below with an integer from 0 to 10, where
+0 means you are absolutely not available (for example, due to another class),
+and 10 indicates a strong preference.  The scores are set to 5 by default.
+After changing the scores to reflect your preferences, commit the changes to
+your repository.
+
+Do not change the format of this file, as the course staff will use automated
+tools to process it.  You may update your preferences whenever and as often as
+you wish, and late Saturday night, the course staff will use your current time
+preferences to create a code walk schedule for the coming week.
+
+Please note that if you indicate low availability, we may not be able to honor
+your preferences.  To ensure that we can find a time that works for you, use
+a 0 score *only* if you absolutely cannot come to a code walk at that time.
+
+
+A) Tuesday 10:00-11:00 - 0
+B) Tuesday 11:00-12:00 - 0
+C) Tuesday 12:00-13:00 - 0
+D) Tuesday 13:00-14:00 - 0
+E) Tuesday 14:00-15:00 - 0
+F) Tuesday 15:00-16:00 - 0
+G) Tuesday 15:30-16:30 - 0
+
+H) Tuesday 18:00-19:00 - 0
+I) Tuesday 19:00-20:00 - 0
+
+J) Wednesday 13:00-14:00 - 5
+K) Wednesday 14:00-15:00 - 5
+L) Wednesday 15:00-16:00 - 5
+
+M) Wednesday 18:00-19:00 - 0
+
+N) Thursday 10:00-11:00 - 0
+O) Thursday 11:00-12:00 - 0
+P) Thursday 12:00-13:00 - 0
+Q) Thursday 13:00-14:00 - 10
+R) Thursday 14:00-15:00 - 0
+S) Thursday 15:00-16:00 - 0
+
+T) Thursday 18:00-19:00 - 5
+U) Thursday 19:00-20:00 - 5
+
+V) Friday 15:00-16:00 - 5
+W) Friday 15:30-16:30 - 0
+X) Friday 16:00-17:00 - 10
+Y) Friday 17:00-18:00 - 10
+Z) Friday 18:00-19:00 - 10

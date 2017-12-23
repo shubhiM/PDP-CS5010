@@ -1,0 +1,135 @@
+--------------------
+q1 > Test #2
+Test #2
+FAILURE
+name:       check-equal?
+location:   q1-bb.rkt:324:5
+params:     #f
+#t
+actual:     #f
+expected:   #t
+expression: (check-equal? (strongly-connected? deltaFlights) true)
+message:    "but deltaFlights is strongly connected"
+Check failure
+--------------------
+--------------------
+q1 > Test #6
+Test #6
+ERROR
+node-cost: contract violation
+  expected: node?
+  given: '()
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/htdp-lib/lang/private/teach.rkt:962:53: node-cost
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:423:30
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+
+--------------------
+--------------------
+q1 > Test #17
+Test #17
+ERROR
+with-limit: out of time
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/text-ui.rkt:243:0: run-tests14
+   /home/jmk/src/CODECUT/set08/pdp-shubhi31-abhilashk/set08/q1-bb.rkt: [running body]
+
+--------------------
+--------------------
+q1 > Test #18
+Test #18
+ERROR
+with-limit: out of time
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/text-ui.rkt:243:0: run-tests14
+   /home/jmk/src/CODECUT/set08/pdp-shubhi31-abhilashk/set08/q1-bb.rkt: [running body]
+
+--------------------
+--------------------
+q1 > Test #19
+Test #19
+ERROR
+with-limit: out of time
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/text-ui.rkt:243:0: run-tests14
+   /home/jmk/src/CODECUT/set08/pdp-shubhi31-abhilashk/set08/q1-bb.rkt: [running body]
+
+--------------------
+--------------------
+q1 > Test #20
+Test #20
+ERROR
+with-limit: out of time
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/text-ui.rkt:243:0: run-tests14
+   /home/jmk/src/CODECUT/set08/pdp-shubhi31-abhilashk/set08/q1-bb.rkt: [running body]
+
+--------------------
+--------------------
+q1 > Test #21
+Test #21
+ERROR
+with-limit: out of time
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/text-ui.rkt:243:0: run-tests14
+   /home/jmk/src/CODECUT/set08/pdp-shubhi31-abhilashk/set08/q1-bb.rkt: [running body]
+
+--------------------
+--------------------
+q1 > Test #22
+Test #22
+ERROR
+with-limit: out of time
+  context...:
+   /proj/racket/plt-released/recent/share/pkgs/sandbox-lib/racket/sandbox.rkt:379:0: call-with-limits
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/result.rkt:99:3
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:28:2
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:85:13: the-tests
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/private/test-suite.rkt:60:0: apply-test-suite
+   /proj/racket/plt-released/recent/share/pkgs/rackunit-lib/rackunit/text-ui.rkt:243:0: run-tests14
+   /home/jmk/src/CODECUT/set08/pdp-shubhi31-abhilashk/set08/q1-bb.rkt: [running body]
+
+--------------------
+14 success(es) 1 failure(s) 7 error(s) 22 test(s) run
+extras.rkt Wed Sep 14 08:52:19 2016
+flight.rkt appears to be in a correctly named folder. Running tests...
+Running tests from flight.rkt...
+All tests passed (13 tests).
+q1.rkt appears to be in a correctly named folder. Running tests...
+Running tests from q1.rkt...
+All tests passed (10 tests).
+cpu time: 542 real time: 541 gc time: 2
+cpu time: 861 real time: 861 gc time: 4
+cpu time: 1317 real time: 1316 gc time: 2
+cpu time: 2066 real time: 2066 gc time: 5
+cpu time: 3029 real time: 3028 gc time: 10
+cpu time: 4354 real time: 4354 gc time: 16
+cpu time: 158 real time: 158 gc time: 0
+cpu time: 315 real time: 315 gc time: 2
+cpu time: 598 real time: 598 gc time: 3
+8

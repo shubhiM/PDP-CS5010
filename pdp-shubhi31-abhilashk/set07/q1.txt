@@ -1,0 +1,3 @@
+The following are the changes done to respect Abstraction barrier:
+1. Added itinerary=? method to compare the two lists of flights
+2. Improvements from code walk design suggestions and correction report

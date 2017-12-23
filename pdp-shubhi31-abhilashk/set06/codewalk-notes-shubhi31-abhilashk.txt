@@ -1,0 +1,57 @@
+TA-1 Name:- Wenjun
+TA-2 Name:- Sankar
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1:
+
+Design Grade:- A
+TA Comments on Design:-
+> Well defined
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+Question 2:
+
+Design Grade:- AB
+TA Comments on Design:-
+> lambda functions are well documented except in two place.
+> lambda(subtree) fns contract is wrong. Its getting a Airport.
+> Halting measure is required.
+> Contract of flight-with-total-time is wrong.
+> You should use a new data structure if you want to pass the time along with list of flights.
+> Good use of examples.
+
+Presentation Grade:-A
+TA Comments on Presentation:-
+> was able to answer qns asked.
+
+
+Student2 CCIS ID:- abhilashk
+
+Question 1:
+
+Design Grade:- A
+TA Comments on Design:-
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+
+
+Question 2:
+
+Design Grade:- AB
+TA Comments on Design:-
+> lambda functions are well documented except in two place.
+> lambda(subtree) fns contract is wrong. Its getting a Airport.
+> Halting measure is required.
+> Contract of flight-with-total-time is wrong.
+> You should use a new data structure if you want to pass the time along with list of flights.
+> Good use of examples.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+> was able to answer qns asked.
