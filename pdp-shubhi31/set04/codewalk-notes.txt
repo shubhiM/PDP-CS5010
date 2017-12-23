@@ -1,0 +1,34 @@
+TA-1 Name:- Himanshu
+TA-2 Name:- Rohit
+
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1 :- 
+
+Design Grade:- AB
+TA Comments on Design:- 
+ - Goal missing 
+ - StarColor observer template contract takes a string , It should take StartColor as input
+ - doodad struct constructor template does not have an argument for age.
+ - Examples missing
+ - Haulting measure missing 
+ - initial-world can be broken into helper to increase readability
+ - Magic constants used in the program (function doodad-star-vx-after-key-event-t)
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+ - Good 
+
+Question 2 :-
+
+Design Grade:- A
+TA Comments on Design:-
+
+ - ListOfFlapjack template should pass the first element(first lst) to flapjack-fn
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+ - Good

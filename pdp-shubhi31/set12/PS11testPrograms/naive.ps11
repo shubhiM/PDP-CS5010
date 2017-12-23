@@ -1,0 +1,82 @@
+# Naive gc benchmark.
+# Allocates m lists, each of length n.
+
+naive (m, n)
+  if m < M
+    then length (allocation (m, n))
+    else do (allocation (M, n),
+             (λ (ignored) naive (m - M, n)));
+
+# To reduce the likelihood of stack overflow
+# when interpreted by an interpreter written in Java,
+# what would ordinarily have been m tail-recursive
+# calls are broken up into pieces with no more than M
+# tail-recursive calls.
+
+M = 100;
+
+# Passes its first argument to its second argument.
+
+do (x, f) f (x);
+
+# Allocates m lists, each of length n.
+
+allocation (m, n)
+  if m > 1
+    then do (makeList (n),
+             (λ (ignored) allocation (m - 1, n)))
+    else makeList (n);
+
+# Returns a newly allocated list of n elements.
+
+makeList (n)
+  if n > 0
+    then cons (n, makeList (n - 1))
+    else empty;
+
+# Returns the length of the list.
+
+length (lst)
+  if isEmpty (lst) then 0 else 1 + length (rest (lst));
+
+################################################################
+#
+# An abstract data type of lists.
+#
+# Representation:
+#     A list is a function that, given a 3-argument selector
+#     function, returns the result of calling that function on
+#     these three things:
+#         a boolean indicating whether the list is empty
+#         the first element of the list
+#         the rest of the list
+#
+################################################################
+
+empty (op)                      # the empty list
+  op (true, empty, empty);
+
+cons (x, lst)                   # returns x consed onto lst
+  (λ (op)
+    (op (false, x, lst)));
+
+isEmpty (lst)                   # returns true iff lst is empty
+  lst ((λ (x, y, z) x));
+
+first (lst)                     # returns first element of a non-empty lst
+  if isEmpty (lst)
+    then false + false          # throws exception if lst is empty
+    else first0 (lst);
+
+rest (lst)                      # returns rest of a non-empty lst
+  if isEmpty (lst)
+    then false + false          # throws exception if lst is empty
+    else rest0 (lst);
+
+# Private help functions.
+
+first0 (lst)                    # unsafe (non-checking) version of first
+  lst ((λ (x, y, z) y));
+
+rest0 (lst)                     # unsafe (non-checking) version of rest
+  lst ((λ (x, y, z) z))

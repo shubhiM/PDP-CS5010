@@ -1,0 +1,30 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Sankar
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1:
+
+Design Grade:- AB
+TA Comments on Design:-
+> sumSquareLoop2 is not returning first alternating (n+1)^2
+
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+> was able to explain an efficient way and inefficient way of implementing tail calls.
+> was not able to identify tail call and tail context.
+ 
+
+Question 2:
+
+Design Grade:- A
+TA Comments on Design:-
+> student said garbage collector is faster based on the benchmark. 
+  But answered that in general, one cannot be assumed to be better than the other.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+> was able to answer why java is taking more time to run benchmark when limiting the memory.
+> it is possible to make garbage collector perform bad.

@@ -1,0 +1,40 @@
+--------------------
+q2 > Test #5
+Test #5
+FAILURE
+name:       check-equal?
+location:   q2-bb.rkt:146:4
+params:     '(((flapjack -30 0 5))
+  ((flapjack -20 0 5))
+  ((flapjack 0 0 15))
+  ((flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 0 40 25)))
+'(((flapjack -30 0 5) (flapjack -20 0 5))
+  ((flapjack -30 0 5) (flapjack -20 0 5) (flapjack 0 0 15))
+  ((flapjack -20 0 5) (flapjack 0 0 15) (flapjack 0 40 25) (flapjack 25 0 10))
+  ((flapjack 0 0 15) (flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 0 0 15) (flapjack 0 40 25)))
+actual:     '(((flapjack -30 0 5))
+  ((flapjack -20 0 5))
+  ((flapjack 0 0 15))
+  ((flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 0 40 25)))
+expected:   '(((flapjack -30 0 5) (flapjack -20 0 5))
+  ((flapjack -30 0 5) (flapjack -20 0 5) (flapjack 0 0 15))
+  ((flapjack -20 0 5) (flapjack 0 0 15) (flapjack 0 40 25) (flapjack 25 0 10))
+  ((flapjack 0 0 15) (flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 25 0 10) (flapjack 35 0 2))
+  ((flapjack 0 0 15) (flapjack 0 40 25)))
+expression: (check-equal? (map list-of-flapjacks-as-list (map sorted-flapjacks (overlapping-flapjacks (list (make-flapjack -30 0 5) (make-flapjack -20 0 5) (make-flapjack 0 0 15) (make-flapjack 25 0 10) (make-flapjack 35 0 2) (make-flapjack 0 40 25))))) (quote (((flapjack -30 0 5) (flapjack -20 0 5)) ((flapjack -30 0 5) (flapjack -20 0 5) (flapjack 0 0 15)) ((flapjack -20 0 5) (flapjack 0 0 15) (flapjack 0 40 25) (flapjack 25 0 10)) ((flapjack 0 0 15) (flapjack 25 0 10) (flapjack 35 0 2)) ((flapjack 25 0 10) (flapjack 35 0 2)) ((flapjack 0 0 15) (flapjack 0 40 25)))))
+message:    "overlapping-flapjacks fails on touching flapjacks"
+Check failure
+--------------------
+10 success(es) 1 failure(s) 0 error(s) 11 test(s) run
+extras.rkt Wed Sep 14 08:52:19 2016
+q2.rkt appears to be in a correctly named folder. Running tests...
+Running tests from q2.rkt...
+All tests passed (7 tests).
+1

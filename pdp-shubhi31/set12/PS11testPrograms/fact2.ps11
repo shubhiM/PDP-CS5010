@@ -1,0 +1,9 @@
+# Factorial function, iterative.
+
+fact (n)
+  factLoop (n, 1);
+
+factLoop (n, product)
+  if n = 0
+    then product
+    else factLoop (n - 1, n * product)

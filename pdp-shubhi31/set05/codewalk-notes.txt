@@ -1,0 +1,33 @@
+TA-1 Name:- Sankar
+TA-2 Name:- Rohit
+
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1 :
+
+Design Grade: A
+TA Comments on Design: 
+- Constants can be have better names than "gold" as GOLD
+- world-after-tick explanation? explained
+- func doodad-after-age-increase-by-1 - lambda is redundant
+- What does map do? answered
+- examples missing from helper functions
+- How doodads are being deleted? answered
+- world-to-scene - explained
+- suggestion - better name arguments to lambda in foldr
+
+Presentation Grade: A
+TA Comments on Presentation:
+
+
+Question 2 :
+
+Design Grade: A
+TA Comments on Design: 
+- non-overlapping-flapjacks explanation - explained
+
+Presentation Grade: A
+TA Comments on Presentation:
+- Can foldr be used to get overlapping-flapjacks? answered

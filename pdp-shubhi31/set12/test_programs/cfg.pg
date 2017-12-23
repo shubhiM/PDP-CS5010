@@ -1,0 +1,76 @@
+ParseGen grammar for CS 5010 Problem Set 10, spring 2017.
+
+*terminals
+
+id
+boolean
+integer
+lparen
+rparen
+comma
+semi
+lambda
+
+lt
+gt
+eq
+plus
+minus
+times
+
+if
+then
+else
+
+eof
+
+*productions
+
+<pgm>     ::=  <defn> <pgm2>                                        #cons
+<pgm2>    ::=  eof                                                  #mkEmpty0
+          ::=  semi <pgm>                                           #identity
+<defn>    ::=  <id> <defn2>                                         #mkDef
+<defn2>   ::=  eq <const>                                           #identity
+          ::=  lparen <formals> rparen <expr>                       #mkLambda
+<const>   ::=  boolean                                              #mkBool
+          ::=  integer                                              #mkInt
+<lambda>  ::=  lparen lambda lparen <formals> rparen <expr> rparen  #mkLambda
+<lambda2> ::=  lambda lparen <formals> rparen <expr> rparen         #mkLambda
+
+<if>      ::=  if <expr> then <expr> else <expr>                    #mkIf
+
+<expr>    ::=  <if>                                                 #identity
+          ::=  <arith> <expr2>                                      #leftAssoc
+<expr2>   ::=                                                       #mkNone
+          ::=  <relop> <arith>                                      #mkPartial1
+<arith>   ::=  <term> <arith2>                                      #leftAssoc
+<arith2>  ::=                                                       #mkNone
+          ::=  <addop> <term> <arith2>                              #mkPartial
+<term>    ::=  <factor> <term2>                                     #leftAssoc
+<term2>   ::=                                                       #mkNone
+          ::=  <mulop> <factor> <term2>                             #mkPartial
+<factor>  ::=  <const>                                              #identity
+          ::=  <id> <factor2>                                       #mkCall2
+          ::=  lparen <factor3>                                     #identity
+<factor2> ::=                                                       #mkNoArgs
+          ::=  lparen <exprs> rparen <factor2>                      #mkCalls
+<factor3> ::=  <lambda2> <factor2>                                  #mkCall2
+          ::=  <expr> rparen <factor2>                              #mkCall2
+
+<relop>   ::=  lt                                                   #mkLT
+          ::=  eq                                                   #mkEQ
+          ::=  gt                                                   #mkGT
+<addop>   ::=  plus                                                 #mkPLUS
+          ::=  minus                                                #mkMINUS
+<mulop>   ::=  times                                                #mkTIMES
+
+<formals>  ::=  <id> <formals2>                                     #cons
+<formals2> ::=                                                      #mkEmpty
+           ::=  comma <formals>                                     #identity
+<exprs>    ::=  <expr> <exprs2>                                     #cons
+<exprs2>   ::=                                                      #mkEmpty
+           ::=  comma <exprs>                                       #identity
+
+<id>       ::=  id                                                  #mkId
+
+*end

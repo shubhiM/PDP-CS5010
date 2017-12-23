@@ -1,0 +1,5 @@
+set01/q1.rkt: ok
+set01/q2.rkt: ok
+set01/q3.rkt: ok
+set01/q4.rkt: ok
+set01/q5.rkt: ok

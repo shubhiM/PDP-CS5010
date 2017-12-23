@@ -1,0 +1,14 @@
+Parser for Problem Set 11.
+
+Files:
+        Actions.java    // action routines called by parser
+        Parser.java     // strong LL(1) parser generated from cfg.pg
+        Scanner.java    // lexical analyzer, written by hand
+        Tokens.java     // lists of tokens, only for error messages
+
+        cfg.pg          // LL(1) grammar, in ParseGen format
+
+The Scanner class in Scanner.java defines several public static
+methods for parsing and running programs and expressions.
+
+Will Clinger

@@ -1,0 +1,6 @@
+extras.rkt Wed Sep 14 08:52:19 2016
+q2.rkt appears to be in a correctly named folder. Running tests...
+Running tests from q2.rkt...
+All tests passed (78 tests).
+15 success(es) 0 failure(s) 0 error(s) 15 test(s) run
+0

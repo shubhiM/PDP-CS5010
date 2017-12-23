@@ -1,0 +1,29 @@
+TA-1 Name:- Rohit
+TA-2 Name:- Sankar
+
+
+Student1 CCIS ID:- shubhi31
+
+Question 1 :-
+
+Design Grade:- AB
+TA Comments on Design:-
+>Suggest to maintain the structure properly.
+>Syntax error in observer template.
+>One function one task is not maintained.
+>Function name should be noun related to what is returned by that function.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+>Was able to explain properly.
+
+Question 2 :-
+
+Design Grade:-
+TA Comments on Design:- A
+>Try to break the functions into smaller functions.
+
+Presentation Grade:- A
+TA Comments on Presentation:-
+>Good.
+

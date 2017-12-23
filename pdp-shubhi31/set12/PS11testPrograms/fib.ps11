@@ -1,0 +1,22 @@
+# Fibonacci numbers, computed the slow way.
+#
+# Usage:
+#
+#     java Programs fib.ps11 N ITERS
+#
+# where
+#
+#     you want to compute fib(N) ITERS times
+
+main (n, iters)
+  if iters = 0
+    then 0-1
+  else if iters = 1
+    then fib (n)
+  else (λ (ignored) main (n, iters - 1))
+       (fib (n));
+
+fib (n)
+  if n < 2
+    then n
+    else fib (n - 1) + fib (n - 2)

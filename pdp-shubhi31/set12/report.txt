@@ -1,0 +1,122 @@
+Description of machine used for benchmarking
+--------------------------------------------
+
+Manufacturer, model, and year manufactured:  MacBook Pro (Retina, 13-inch, Early 2015)
+
+Processor:  Intel Core i5
+
+Clock speed: 2.7 GHz
+
+Size of main memory: 8 GB 1867 MHz DDR3
+
+
+Question 1
+----------
+
+For each of the following, report the elapsed (not cpu) time,
+in seconds, on your benchmark machine.  If your interpreter
+doesn't work, or returns an incorrect result, leave those
+timings blank.
+
+    Benchmark:    java Programs fib.ps11 35 1
+    Timing:       7.382 seconds
+
+    Benchmark:    larceny --r7rs --program fib.ps11.scm -- 35 100
+    Timing:       15.085452 seconds
+
+    Benchmark:    java Fib 35 100
+    Timing:       5.019 seconds
+
+For each of the following, write down the largest power of 10
+you can substitute for N without getting a stack overflow:
+
+    Benchmark:    java Programs sumsq.ps11 N 1
+    Largest N:    2950
+
+    Benchmark:    java Sumsq N 1
+    Largest N:    11000
+
+    Benchmark:    java -Xss100M Programs sumsq.ps11 N 1
+    Largest N:    899990
+
+    Benchmark:    java -Xss100M Sumsq N 1
+    Largest N:    7999980
+
+For each of the following, report the elapsed (not cpu) time,
+in seconds, on your benchmark machine.  If a benchmark doesn't
+work, or encounters a stack overflow, or returns a wrong answer,
+leave those timings blank.
+
+    Benchmark:    java -Xss100M Programs sumsq.ps11 10000 100000
+    Timing:       343.042 seconds
+
+    Benchmark:    larceny --r7rs --program sumsq.ps11.scm -- 10000 100000
+    Timing:       4.622715 seconds
+
+    Benchmark:    java -Xss100M Sumsq 10000 100000
+    Timing:       2.291 seconds
+
+    Benchmark:    java Sumsq2 10000 100000
+    Timing:       1.414 seconds
+
+
+Question 2
+----------
+
+For each of the following, report the elapsed (not cpu) time,
+in seconds, as shown in the output on your benchmark machine.
+
+    Benchmark:    gcc gcbench.c; ./a.out
+    Timing:       2.193 seconds
+
+    Benchmark:    java GCBench
+    Timing:       0.299 seconds
+
+    Benchmark:    java -Xmx64M GCBench
+    Timing:       0.354 seconds
+
+    Benchmark:    larceny --r7rs --program gcbenchJ.scm
+    Timing:       1.0 seconds
+
+For each of the following, report the elapsed (not cpu) time,
+in seconds, as shown in the output on your benchmark machine.
+
+    Benchmark:    gcc permNKL.c; ./a.out
+    Timing:       43.720 seconds
+
+    Benchmark:    java PermNKL
+    Timing:       21.916 seconds
+
+    Benchmark:    java -Xmx500M PermNKL
+    Timing:       45.657 seconds
+
+    Benchmark:    larceny --r7rs --program permJ.scm
+    Timing:       0.026 seconds
+
+    Benchmark:    larceny --stopcopy --load 4 --r7rs --program permJ.scm
+    Timing:       13.0 seconds
+
+
+
+To obtain a succinct description of the options used above, type
+
+    java -X
+    larceny --wizard
+
+Suppose someone asks you whether explicit de allocation, as in C,
+is faster than garbage collection.  After running the benchmarks
+above, how would you answer that question?
+
+Explicit de allocation in C is very efficient compared to garbage
+collection especially when we use object pools for explicitly managing
+free space and used space. In case of object pools, we allocate large
+chunk of memory to objects initially and keep on adding them to free space
+as their usage is finished. Afterwards, the space is always taken from free
+object pool. Free and used object pools are managed by pointers referring to
+the free and used object pool linked lists. So memory operations are in nut shell
+limited to changing the pointer references. This is all wrt to C programming
+language.We can see that this way explicit memory management using object pools
+in C is way faster than garbage collection however the c code thats i given in the
+problem is using the default Malloc implementation and not object pool. Hence, in the
+benchmark Java programs are outperforming C programs. If we improve the C program then
+they can run faster than Java Programs.
